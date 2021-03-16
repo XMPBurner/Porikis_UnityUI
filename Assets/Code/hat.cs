@@ -11,7 +11,6 @@ public class hat : MonoBehaviour
     public GameObject hat1;
     public GameObject hat2;
     public GameObject hat3;
-    public GameObject texttest;
 
     public bool hat1on;
     public bool hat2on;
@@ -32,7 +31,6 @@ void Update()
 {
     if(a == 0)
     {
-        texttest.GetComponent<Text>().text = "0";
         hat1on = false;
         hat2on = false;
         hat3on = false;
@@ -42,15 +40,15 @@ void Update()
     }
         if(a == 1)
     {
-        texttest.GetComponent<Text>().text = "1";
         hat1on = true;
         hat2on = false;
         hat3on = false;
         hat1.SetActive(hat1on);
+        hat2.SetActive(hat2on);
+        hat3.SetActive(hat3on);
     }
         if(a == 2)
     {
-        texttest.GetComponent<Text>().text = "2";
         hat1on = false;
         hat2on = true;
         hat3on = false;
@@ -60,7 +58,6 @@ void Update()
     }
         if(a == 3)
     {
-        texttest.GetComponent<Text>().text = "3";
         hat1on = false;
         hat2on = false;
         hat3on = true;
